@@ -44,13 +44,12 @@ For my breakout board this finds addresses at `0x40` and `0x70`
 - `0x70` is the `All Call` address (I think we don't care about this unless
   using a string of multiple PCA9685 devices)
 - `0x40` is the configurable device address
- - This is the address that we care about 
- - I think you can adjust jumpers on your breakout board to adjust this address
+  - This is the address that we care about 
+  - I think you can adjust jumpers on your breakout board to adjust this address
 
-
-This may get installed automatically if you install this library using pip? My
-setup Pi OS version makes me use apt-get. To manually install `smbus` dependency
-for this library:
+This library requires `smbus`. This may get installed automatically if you
+install this library using pip? My setup Pi OS version makes me use apt-get. To
+manually install `smbus` dependency for this library:
 
 ```bash
 sudo apt install python3-smbus
@@ -58,7 +57,8 @@ sudo apt install python3-smbus
 
 ## VS Code Remote ssh tips
 
-You will need the following to 
+You will need the following to use this library if you use VS Code Jypyter
+notebooks via SSH like I did:
 
 ```bash
 sudo apt-get install python3-ipykernel
