@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nservo"
+version = "0.1.0"
+description = "Yet another PCA9685 driver, the way I likes it."
+readme = "readme.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+   { name="thehappycheese", email="2748120+thehappycheese@users.noreply.github.com" },
+]
+dependencies = ["smbus"]
