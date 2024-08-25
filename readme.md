@@ -68,3 +68,9 @@ sudo apt-get install python3-ipykernel
 
 PWM control signal is 50hz with pulse between 1ms and 2ms
 or on time of 5% to 10% duty
+
+### Audio
+
+I got headless raspberry pi 5 audio working fastest using mpg123 over bluetooth.
+
+use this guide https://gist.github.com/actuino/9548329d1bba6663a63886067af5e4cb.
